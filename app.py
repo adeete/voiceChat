@@ -20,14 +20,14 @@ from bs4 import BeautifulSoup
 # from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-app = Flask(__name__)
-app.config['DEBUG'] = True
-app.config['SECRET_KEY'] = "abcd"
-socketio = SocketIO(app)
-CORS(app)  # , resources={r"/api/*": {"origins":"*"}})
+application = Flask(__name__)
+application.config['DEBUG'] = True
+application.config['SECRET_KEY'] = "abcd"
+socketio = SocketIO(application)
+CORS(application)  # , resources={r"/api/*": {"origins":"*"}})
 
 
-@app.route('/', methods=['GET', 'POST'])
+@application.route('/', methods=['GET', 'POST'])
 def index():
     print(request.get_json())
     if request.is_json:
@@ -70,10 +70,10 @@ def index():
         return jsonify("{}".format(response))
 
 
-@app.route('/temp', methods=['GET'])
+@application.route('/temp', methods=['GET'])
 def random1():
     return "/temp"
 
 
 if __name__ == "__main__":
-    app.run(port=5050)
+    application.run(port=5050)
