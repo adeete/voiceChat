@@ -1,0 +1,12 @@
+numpy
+panda
+chatterbot==0.8.5
+flask==0.12.2
+textblob==0.15.1
+word2number==1.1
+flask_socketio==2.9.6
+requests==2.18.4
+gunicorn==19.7.1
+flask-cors==3.0.3
+beautifulsoup4==4.4.0
+lxml==4.2.1
