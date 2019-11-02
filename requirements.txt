@@ -1,7 +1,7 @@
 numpy
 panda
 chatterbot==0.8.5
-flask==0.12.2
+flask==1.0
 textblob==0.15.1
 word2number==1.1
 flask_socketio==2.9.6
