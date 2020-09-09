@@ -9,9 +9,7 @@ I am fine. Thank you. How are you?
 I am fine too.
 That's great.
 Tell me something about yourself.
-I am Joe.I work for Bosch.
-I work for Bosch too.
-okay thats's great.
+I am Joe.
 Bye!
 See you!
 bye!
